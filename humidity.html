@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>second page</title>
+    <style>
+            .float-img {
+                float: left;
+                margin-right:  20px; 
+                margin-bottom: 10px; 
+                border:solid black 1px; 
+                padding: 2px
+            }       
+    </style>
+    <!--<link rel="stylesheet" href="reset.css">-->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity=“sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u” crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Plots</a>
+                            <select id ="nav-select">
+                                    <option class="navbuttons" value="Max Temperature">Max Temperature</option>
+                                      
+                                    <option class="navbuttons" value="Humidity">Humidity</option>
+                                        
+                                    <option class="navbuttons" value= "Cloudiness">Cloudiness</option>
+        
+                                    <option class="navbuttons" value="Wind Speed">Wind Speed</option>
+                            </select>
+                                    
+                            
+                        </li>
+                        <li>
+                            <a href="comparisons.html">Comparison</a>
+                        </li>
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                    
+                    <div class="clearfix"></div>
+        
+                </nav>
+                <header class="header">
+                    <h1>Lattitude</h1>
+                    
+                </header><br>
+                <br>
+
+    <header class="header">
+        <h3>Lattitude vs Humidity</h3>
+        
+
+    </header>
+    <p class="plot-info">
+        <article>
+                <img src="LatHumid.png" width="400" height="400"
+                alt="picture of lattitude vs Humidity" title="Running with these is not reccomended"
+                class="float-img"/>
+        </article>
+        
+                Most cities, regardless of latitude, have over 60% humidity.
+                Many cities have 100% humidity.
+            </br>
+            </br>
+                Latitudes with the greatest range of humidities were between 20 and 40 degrees away from the equator.
+    </p>
+</body>
+</html>

@@ -1,0 +1,189 @@
+
+body{
+    margin-right: 10px;
+    margin-left: 10px;
+    background: #f5f4f4;
+    background-size: 100px 50px;
+    font-family:'Work Sans', sans-serif;
+    font-weight: 300;
+    padding: 20px 0;
+    font-size: 20px;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+.col-md-6.container{
+    margin-top: -100px;
+}
+  
+.container{
+    width: 50%;
+    margin:0 auto;
+}
+  
+header{
+    font-size: 200%;
+    font-style: Bold;
+    width: 100%;
+    padding: -40px ;
+    background: #c0cfc2;
+    color:#10991b;
+    
+}
+
+header::after {
+    content:'';
+    display: table;
+    clear: both;
+
+}
+  
+.logo{
+    float:right; 
+    padding: 10px 0;
+    background: #5bd635;
+}
+  
+nav{
+    float: right;
+}
+  
+nav ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a{
+    color:#0f0b03;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-style: Bold;
+    font-weight: 200;
+}
+
+nav a:hover{
+    color: none;
+}
+
+nav a::before{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(53, 32, 32);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 500ms;
+
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: Bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #10991b;
+    
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 200;
+    font-style: Bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #10991b;
+    
+}
+
+.columns{
+    columns: 250px 4;
+    column-rule: 1px dotted #ccc;
+    column-gap: 3em;
+
+}
+
+h1{font-size: 100%;
+    font-style: Bold;
+    width: 100%;
+    padding: 0.5px ;
+    background: none;
+    color: #44854c;
+
+}
+
+
+
+
+
+#Large devices (desktops, 992px and up)
+@media(max-width: 992px){
+    .navbar-expand-lg{
+    background-color: #0BADA6 !important;
+    }
+    .navbar{
+       max-height: none;
+       padding: inherit;
+    }
+    .navbar div{
+       margin: inherit;
+       background-color: white;
+    }
+    .navbar-brand{
+       padding: 10px !important;
+    }
+    
+    button{
+       margin-right: 30px;
+    }
+    button:focus {
+    
+       outline: 1px dotted;
+       outline: 5px auto -webkit-focusring-color;
+    
+       }
+    }
+
+.clearfix {
+        overflow: auto;
+      }
+
+
+*{
+        box-sizing: border-box;
+    }    
+
+.box {
+        float: left;
+        width: 35%;
+        padding: px;
+        margin-left: 10%;
+      }
+
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
